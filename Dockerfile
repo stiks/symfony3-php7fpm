@@ -6,6 +6,8 @@ ENV REDIS_VERSION 4.0.2
 
 # Install Symfony 3 requirements
 RUN set -xe \
+    # Git (need for composer)
+    && apk add --no-cache git \
     # Fixed Intl version
     #&& apk add --no-cache libintl icu icu-dev \
     #&& docker-php-ext-install intl \

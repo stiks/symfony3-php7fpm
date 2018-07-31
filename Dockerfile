@@ -23,4 +23,7 @@ RUN set -xe \
     && mv composer.phar /usr/local/bin/composer \
     && composer global require hirak/prestissimo
 
+COPY supervisor.conf /etc/supervisord.conf
+COPY nginx.conf /etc/nginx/nginx.conf
+
 WORKDIR /srv

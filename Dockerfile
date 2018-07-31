@@ -26,4 +26,5 @@ RUN set -xe \
 COPY supervisor.conf /etc/supervisord.conf
 COPY nginx.conf /etc/nginx/nginx.conf
 
+# Base dir
 WORKDIR /srv
